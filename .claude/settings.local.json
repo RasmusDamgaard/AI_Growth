@@ -1,0 +1,12 @@
+{
+  "permissions": {
+    "allow": [
+      "WebFetch(domain:www.economicforces.xyz)",
+      "Bash(python:*)",
+      "Bash(pip install:*)",
+      "Bash(timeout 10 streamlit run:*)",
+      "Bash(timeout 8 bash -c \"while ! curl -s http://localhost:8502/_stcore/health 2>/dev/null | grep -q ok; do sleep 1; done; echo 'App is ready'\":*)",
+      "Bash(curl:*)"
+    ]
+  }
+}
